@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f8ff;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+    max-width: 600px;
+    gap: 20px;
+}
+
+.container h1{
+    color: #333;
+}
+
+.box{
+    position: relative;
+    border-radius: 5px;
+    background: #fff;
+    padding: 0 20px 20px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.box input{
+    appearance: none;
+}
+
+.box label{
+    display: flex;
+    align-items: center;
+}
+
+label h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+    background: #333;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+
+label h3{
+    position: relative;
+    z-index:1;
+    font-weight: 500;
+    color: #333;
+}
+
+.box label::after{
+    position: absolute;
+    right: 22px;
+    content: '+';
+    transition: transform 1s;
+    font-size: 2.1rem;
+    color: rgba(0,0,0,0.2);
+}
+
+.box:hover label::after{
+    color: #333;
+}
+
+.box input:checked ~ label::after{
+    transform: rotate(135deg);
+}
+
+.box .content{
+    max-height: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.box input:checked ~ .content{
+    max-height: 100vh;
+}
