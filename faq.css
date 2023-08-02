@@ -15,6 +15,12 @@ body{
     min-height: 100vh;
 }
 
+h1 {
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 0.5rem !important;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -34,6 +40,7 @@ body{
     padding: 0 20px 20px;
     box-shadow: 0 15px 25px rgba(0,0,0,0.1);
     overflow: hidden;
+    margin: 25px 0;
 }
 
 .box input{
@@ -90,4 +97,10 @@ label h3{
 
 .box input:checked ~ .content{
     max-height: 100vh;
+}
+
+
+.nav-item {
+    margin-left: 1.5rem;
+    padding: 0rem 1.5rem;
 }
