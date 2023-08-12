@@ -1,8 +1,3 @@
-*{
-    color: #fff;
-    overflow-x:hidden;
-}
-
 nav {
     display: flex;
     align-items: center;
@@ -17,12 +12,12 @@ nav {
 .nav-item {
     padding-left: 2rem;
     font-size: 18px;
-    color: #fff;
     font-weight: 500;
 }
 
 .nav-link {
-    color: #fff;
+    color: black;
+    transition: 0.6s ease-in-out;
 }
 
 .nav-link:hover {
@@ -78,62 +73,11 @@ nav {
     color: #FF8551;
 }
 
-.main{
-    padding-top: 30.6869420vw;
-    margin-left: 1.1vw;
-}
 .text-main{
-    
+    text-align: center;
+    font-family: 'Roboto';
 }
-
-.main-p{
-    font-weight: 500;
-    margin-left: 1.1vw;
-    font-size: 150%;
-}
-
-.bg-clip {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    padding: 10px;
-}
-
-.video {
-    height: 250px;
-    width: 350px;
-    border-radius: 5px;
-    border: 5px solid #fff;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: .2s linear;
-}
-
-video:hover {
-    transform: scale(1.1);
-}
-
-.popup-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    background-color: rgba(0, 0, 0, 0.8);
-    height: 100%;
-    width: 100%;
-    display: none;
+.main{
+    padding:2rem;
+    margin-top: 3rem;
 }

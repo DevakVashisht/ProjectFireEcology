@@ -3,13 +3,29 @@ body {
     padding: 0;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-x: none;
+    overflow-x: hidden;
+    cursor: none;
+}
+a:hover {
+    cursor:none;
+}
+
+button:hover {
+    cursor: none;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .lobe-logo {
@@ -130,4 +146,153 @@ nav {
 
 .answer {
     color: #fff;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding: 10px;
+    background-color: transparent;
+    margin-top: 6.9vh;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    border: 0.5px solid #000000;
+    cursor: pointer;
+    overflow: hidden;
+    object-fit: cover;
+    transition: .2s linear;;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.tab h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin: 0 auto;
+}
+
+.f{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+.facts{
+    display: block;
+    text-align: center;
+    border: 1px solid #f5f8ff;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1);
+    width: 800px;
+    margin: 7rem auto;
+    padding-top: 1.75rem;
+}
+
+.factH{
+    margin-top: 10px;
+    margin-bottom: 2.69rem;
+    font-size: 2.5rem;
+    padding: 2rem;
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.legs {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 120%;
+    color: rgb(155, 143, 143);
+    /* background-color: #dadada; */
+    padding: 0.69rem;
+}
+
+.toenails {
+    padding: 0rem 6px;
+}
+    .d {
+    padding-left: 3px;
+}
+
+.btn-box {
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.black-btn a {
+    color: white;
+}
+.black-btn {
+    cursor: pointer;
+    text-align: center;
+    background-color: #333;
+    outline: none;
+    border-radius: 10rem;
+    outline: #333;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 3rem;
+    font-size: large;
+    /* margin-top: 0.2rem; */
+    margin-left: 4rem;
+    border-color: #333;
+    margin-right: 3rem;
+    /* margin-left: 25%; */
+    transition: 0.4s ease-in-out;
+}
+
+.black-btn:hover {
+    padding: 1.5rem 2rem;
+    /* border-radius: 90px; */
+}
+
+a::after {
+    color: white;
+}
+
+.nav-link{
+    cursor: pointer;
+}
+
+.cursor-dot {
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+}
+
+
+.cursor-outline{
+    width: 45px;
+    height: 45px;
+    border: 2px solid hsla(0, 0%, 0%, 0.5);
+}
+
+.cursor-dot,
+.cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
 }
